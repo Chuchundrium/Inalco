@@ -9,7 +9,7 @@ html, body, .full-height {
     box-sizing: border-box;
 }
 body {
-    background-color: #DBDDE8;
+    background-color: #5271FF;
 }
 
 .row {
@@ -22,27 +22,68 @@ body {
     flex-direction: column;
 }
 
-.body-container {
-    height: inherit;
-    box-sizing: border-box;
-    justify-content: space-between;
+.card {
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    background-image: radial-gradient(circle at 15px 15px, #FF3131 1px, transparent 0);
+    background-size: 30px 30px;
+    margin: 400px auto auto;
+    padding: 25px;
+    gap: 30px;
+    font-family: "JetBrains Mono", monospace;
+    border: 2px solid #FF3131;
+
+    .logo {
+        padding: 10px;
+        width: 150px;
+        height: 75px;
+        background-color: #5271FF;
+        box-shadow: 8px 8px #FF3131;
+        color: white;
+        .title {
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .full-name {
+            font-size: 11px;
+        }
+    }
+    .content {
+        font-size: 20px;
+        color:  #5271FF;
+        gap: 20px;
+        .left-side {
+            width: 40%;
+            gap: 15px;
+        }
+        .right-side {
+            width: 60%;
+        }
+    }
 }
 
-.header, .footer {
-    height: 80px;
-    background-color: #5271FF;
-    /*color: #FF3131;*/
-    color: white;
-    font-size: 36px;
-    font-family: "Arial", serif;
-    box-sizing: border-box;
-    align-content: center;
-    line-height: 80px;
-    padding-left: 30px;
-}
+/*.body-container {*/
+/*    height: inherit;*/
+/*    box-sizing: border-box;*/
+/*    justify-content: space-between;*/
+/*}*/
 
-.content {
-    font-size: 24px;
-    font-family: "Arial", serif;
-    padding: 100px;
-}
+/*.header, .footer {*/
+/*    height: 80px;*/
+/*    background-color: #5271FF;*/
+/*    !*color: #FF3131;*!*/
+/*    color: white;*/
+/*    font-size: 36px;*/
+/*    font-family: "Arial", serif;*/
+/*    box-sizing: border-box;*/
+/*    align-content: center;*/
+/*    line-height: 80px;*/
+/*    padding-left: 30px;*/
+/*}*/
+
+/*.content {*/
+/*    font-size: 24px;*/
+/*    font-family: "Arial", serif;*/
+/*    padding: 100px;*/
+/*}*/
