@@ -2,16 +2,6 @@
     margin: 0; padding: 0;
 }
 
-html, body, .full-height {
-    height: 100% !important;
-    max-height: 100% !important;
-    min-height: 100% !important;
-    box-sizing: border-box;
-}
-body {
-    background-color: #5271FF;
-}
-
 .row {
     display: flex;
     flex-direction: row;
@@ -22,13 +12,25 @@ body {
     flex-direction: column;
 }
 
+html, body, .full-height {
+    height: 100% !important;
+    max-height: 100% !important;
+    min-height: 100% !important;
+    box-sizing: border-box;
+}
+body {
+    background-color: #5271FF;
+    box-sizing: border-box;
+    display: flex;
+}
+
 .card {
     width: 600px;
     height: 400px;
     background-color: white;
     background-image: radial-gradient(circle at 15px 15px, #FF3131 1px, transparent 0);
     background-size: 30px 30px;
-    margin: 400px auto auto;
+    margin: auto;
     padding: 25px;
     gap: 30px;
     font-family: "JetBrains Mono", monospace;
@@ -53,37 +55,26 @@ body {
         font-size: 20px;
         color:  #5271FF;
         gap: 20px;
-        .left-side {
+        .contacts {
             width: 40%;
             gap: 15px;
         }
-        .right-side {
+        .info {
             width: 60%;
         }
     }
 }
 
-/*.body-container {*/
-/*    height: inherit;*/
-/*    box-sizing: border-box;*/
-/*    justify-content: space-between;*/
-/*}*/
+@media (orientation: portrait) {
+    .card {
+        width: 400px;
+        height: 600px;
+        .content {
+            flex-direction: column;
+            .contacts, .info {
+                width: 100%;
+            }
+        }
+    }
+}
 
-/*.header, .footer {*/
-/*    height: 80px;*/
-/*    background-color: #5271FF;*/
-/*    !*color: #FF3131;*!*/
-/*    color: white;*/
-/*    font-size: 36px;*/
-/*    font-family: "Arial", serif;*/
-/*    box-sizing: border-box;*/
-/*    align-content: center;*/
-/*    line-height: 80px;*/
-/*    padding-left: 30px;*/
-/*}*/
-
-/*.content {*/
-/*    font-size: 24px;*/
-/*    font-family: "Arial", serif;*/
-/*    padding: 100px;*/
-/*}*/
