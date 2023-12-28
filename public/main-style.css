@@ -46,6 +46,7 @@ body {
         color: white;
         .logo-wrapper {
             margin: auto;
+            user-select: none;
             .title {
                 font-size: 40px;
                 font-weight: bold;
@@ -58,6 +59,11 @@ body {
     .content {
         font-size: 20px;
         color:  #5271FF;
+        box-sizing: border-box;
+        ::selection {
+            background-color: #FF3131;
+            color: white;
+        }
         gap: 20px;
         .contacts {
             width: 40%;
