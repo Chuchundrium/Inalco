@@ -26,7 +26,7 @@ body {
 
 .card {
     width: 750px;
-    height: 550px;
+    height: 480px;
     background-color: white;
     background-image: radial-gradient(circle at 15px 15px, #FF3131 1px, transparent 0);
     background-size: 30px 30px;
@@ -66,11 +66,11 @@ body {
         }
         gap: 20px;
         .contacts {
-            width: 40%;
+            width: 45%;
             gap: 15px;
         }
         .info {
-            width: 60%;
+            width: 55%;
         }
     }
 }
@@ -78,7 +78,7 @@ body {
 @media (orientation: portrait) {
     .card {
         width: 550px;
-        height: 750px;
+        height: 690px;
         .content {
             flex-direction: column;
             .contacts, .info {
